@@ -35,4 +35,12 @@ public class Rectangle {
   public float Fits(Rectangle rectangle) {
     return (float) this.Surface() / rectangle.Surface();
   }
+
+  public int Poles() {
+    return (int) Math.ceil(this.Circumference());
+  }
+
+  public double PoleDistance() {
+    return this.Circumference() / this.Poles();
+  }
 }
